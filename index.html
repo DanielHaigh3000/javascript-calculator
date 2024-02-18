@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <h1>JavaScript Calculator</h1>
+      <div class="calculator__container">
+        <div class="calculator__viewport">
+          <span class="calculator__input"></span>
+          <!--&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Total:-->
+          <span class="calculator__total"></span>
+        </div>
+        <div class="calculator__keypad">
+          <div class="calculator__keypad__left">
+            <div class="calculator__keypad__row">
+              <button class="button" data-num="9">9</button>
+              <button class="button" data-num="8">8</button>
+              <button class="button" data-num="7">7</button>
+            </div>
+            <div class="calculator__keypad__row">
+              <button class="button" data-num="6">6</button>
+              <button class="button" data-num="5">5</button>
+              <button class="button" data-num="4">4</button>
+            </div>
+            <div class="calculator__keypad__row">
+              <button class="button" data-num="3">3</button>
+              <button class="button" data-num="2">2</button>
+              <button class="button" data-num="1">1</button>
+            </div>
+            <div class="calculator__keypad__row">
+              <button class="button" data-key="=">=</button>
+              <button class="button" data-num="0">0</button>
+              <button class="button" data-num=".">.</button>
+            </div>
+          </div>
+          <div class="calculator__keypad__right">
+            <button class="button" data-key="AC">AC</button>
+            <button class="button" data-key="/">/</button>
+            <button class="button" data-key="x">x</button>
+            <button class="button" data-key="-">-</button>
+            <button class="button" data-key="+">+</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="scripts.js"></script>
+  </body>
+</html>

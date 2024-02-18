@@ -1,0 +1,131 @@
+/* Reset Rules Begin */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #357960;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reset Rules End */
+
+body {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding: 2rem;
+}
+
+h1 {
+  color: #fdfdfd;
+  font-family: 'Press Start 2P', system-ui;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+.calculator__container {
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 600px;
+}
+
+.calculator__viewport {
+  align-items: center;
+  background: rgb(242, 242, 242);
+  display: flex;
+  height: 75px;
+  justify-content: end;
+  padding: 1rem;
+}
+
+.calculator__viewport span {
+  font-size: 2rem;
+}
+
+.calculator__total {
+  display: none;
+}
+
+.calculator__keypad {
+  display: flex;
+  flex-direction: row;
+}
+
+.calculator__keypad__left {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+}
+
+.calculator__keypad__left > .calculator__keypad__row {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.calculator__keypad__left button {
+  align-items: center;
+  background: #232323;
+  border: none;
+  color: #ffffff;
+  display: flex;
+  flex-grow: 1;
+  font-size: 2rem;
+  height: 80px;
+  justify-content: center;
+  width: 33%;
+}
+
+.calculator__keypad__right {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.calculator__keypad__right button {
+  align-items: center;
+  background: #444444;
+  border: none;
+  color: #ffffff;
+  display: flex;
+  flex-grow: 1;
+  font-size: 2rem;
+  justify-content: center;
+}
